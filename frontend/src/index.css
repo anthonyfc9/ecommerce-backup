@@ -1,0 +1,161 @@
+html{
+  font-size:62.5%;
+  box-sizing: border-box;
+}
+
+body{
+  font:1.6rem helvetica;
+  height:100vh;
+  margin:0;
+}
+#root{
+  height: 100%;
+}
+a{
+  text-decoration: None;
+}
+a:hover{
+color:red;
+}
+.grid-contain{
+  display: grid;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+.header{
+grid-area:header;
+background-color: black;
+color:white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding:10px;
+}
+
+
+.siteLogo a{
+  color:white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.headerLinks a{
+  color:white;
+  text-decoration: none;
+  padding: .75rem;
+}
+.headerLinks a:hover{
+  color: red;
+}
+
+.main{
+  grid-area:main;
+}
+.footer{
+  grid-area:footer;
+  background-color: black;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* --------------------                         home screen                    --------------------------------- */
+/* --------------------                         home screen                    --------------------------------- */
+/* --------------------                         home screen                    --------------------------------- */
+/* --------------------                         home screen                    --------------------------------- */
+/* --------------------                         home screen                    --------------------------------- */
+/* --------------------                         home screen                    --------------------------------- */
+/* --------------------                         home screen                    --------------------------------- */
+/* --------------------                         home screen                    --------------------------------- */
+/* --------------------                         home screen                    --------------------------------- */
+
+.products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.products li{
+list-style-type: none;
+padding:0;
+flex: 0 1 34rem;
+margin:1rem;
+height:50rem;
+border-bottom:.1rem red solid;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.productImage{
+  max-width: 34rem;
+  max-height: 34rem;
+}
+.productName{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.productBrand{
+  font-size: 1.2rem;
+}
+.productPrice{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.productRating{
+  margin-bottom: 1rem;
+}
+/* --------------------                         SideBar                    --------------------------------- */
+/* --------------------                         SideBar                    --------------------------------- */
+/* --------------------                         SideBar                    --------------------------------- */
+/* --------------------                         SideBar                    --------------------------------- */
+/* --------------------                         SideBar                    --------------------------------- */
+/* --------------------                         SideBar                    --------------------------------- */
+/* --------------------                         SideBar                    --------------------------------- */
+/* --------------------                         SideBar                    --------------------------------- */
+/* --------------------                         SideBar                    --------------------------------- */
+
+.siteLogo button {
+  font-size: 3rem;
+  padding: 0.5rem;
+  background:none;
+  border:none;
+  color: white;
+  cursor: pointer;
+}
+.sidebar{
+  position: fixed;
+  transition: transform .5s;
+  transform: translatex(-30rem);
+  width: 30rem;
+  background-color: grey;
+  height: 100%;
+
+}
+.sidebar.open{
+  transform: translatex(0);
+
+}
+.sidebarCloseButton{
+  border-radius: 50%;
+  border: .1rem black solid;
+  width: 3rem;
+  height: 3rem;
+  padding: .5rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  right: .5rem;
+  top: 1.5rem;
+}
