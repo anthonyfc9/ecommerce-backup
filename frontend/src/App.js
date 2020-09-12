@@ -25,10 +25,10 @@ function App() {
                 <button className="sidebarCloseButton" onClick={closeMenu}>X</button>
                 <ul>
                     <li>
-                        <a href="">Pirates</a>
+                        <a href="/">Pirates</a>
                     </li>
                     <li>
-                        <a href="">Marines</a>
+                        <a href="/">Marines</a>
                     </li>
                 </ul>
                 
