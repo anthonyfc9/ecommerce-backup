@@ -7,7 +7,7 @@ export default {
         price: 1500000000,
         minidesc:"fifth yonko of the sea",
         rating:"4/5 star pirate",
-        countInStock:0,
+        countInStock:9,
     },
     {
         id:"2",
@@ -16,7 +16,7 @@ export default {
         price: 320000000,
         minidesc:"Right hand of the straw hats",
         rating:"4/5 star pirate",
-        countInStock:1,
+        countInStock:3,
     },
     {
         id:"3",

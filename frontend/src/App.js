@@ -3,6 +3,7 @@ import './App.css';
 import{BrowserRouter, Route, Link} from 'react-router-dom'
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+import CartScreen from './screens/CartScreen';
 function App() {
   let openMenu=()=>{document.querySelector(".sidebar").classList.add("open")};
   let closeMenu=()=>{document.querySelector(".sidebar").classList.remove("open")};
@@ -16,8 +17,8 @@ function App() {
                 </div>
 
                 <div className="headerLinks">
-                    <a href="signIn.html">Sign In</a>
-                    <a href="cart.html">cart</a>
+                    <Link to="/signIn">Sign In</Link>
+                    <Link to="/cart">cart</Link>
                 </div>
             </header>
             <aside className="sidebar">
@@ -25,7 +26,7 @@ function App() {
                 <button className="sidebarCloseButton" onClick={closeMenu}>X</button>
                 <ul>
                     <li>
-                        <a href="/">Pirates</a>
+                        <Link href="/">Pirates</Link>
                     </li>
                     <li>
                         <a href="/">Marines</a>
@@ -36,6 +37,7 @@ function App() {
             <main className="main">
                 <div className="Content">
                 <Route path="/product/:id" component={ProductScreen} />
+                <Route path="/cart/:id?" component={CartScreen} />
                 <Route path="/" exact={true} component={HomeScreen} />
 
                 </div>
