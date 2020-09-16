@@ -16,6 +16,9 @@ body{
   border-radius: .5rem;
   transition: background-color .5s, color 2s;
 }
+.full-width {
+  width: 100%;
+}
 .button:hover{
   border:.1rem #404040 solid;
   background-color: black;
@@ -286,4 +289,287 @@ li{
 .detailsAction ul li:last-child{
   display: flex;
   flex-direction: column;
+}
+
+/* --------------------                          REVIEWS                    --------------------------------- */
+/* --------------------                          REVIEWS                    --------------------------------- */
+/* --------------------                          REVIEWS                   --------------------------------- */
+/* --------------------                          REVIEWS                    --------------------------------- */
+/* --------------------                          REVIEWS                    --------------------------------- */
+/* --------------------                          REVIEWS                    --------------------------------- */
+/* --------------------                          REVIEWS                    --------------------------------- */
+/* --------------------                          REVIEWS                    --------------------------------- */
+/* --------------------                          REVIEWS                    --------------------------------- */
+
+ul.review {
+  list-style-type: none;
+  padding: 0;
+}
+.review li {
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+.review li > div {
+  margin: 0.5rem;
+}
+
+/* --------------------                          Ratings                    --------------------------------- */
+/* --------------------                          Ratings                    --------------------------------- */
+/* --------------------                          Ratings                   --------------------------------- */
+/* --------------------                          Ratings                    --------------------------------- */
+/* --------------------                          Ratings                    --------------------------------- */
+/* --------------------                          Ratings                    --------------------------------- */
+/* --------------------                          Ratings                    --------------------------------- */
+/* --------------------                          Ratings                    --------------------------------- */
+/* --------------------                          Ratings                    --------------------------------- */
+.rating span {
+  color: #ffb901;
+  font-size: 1.8rem;
+  margin: 0.1rem;
+}
+.rating span:last-child {
+  color: #444444;
+  font-size: 1.4rem;
+}
+a > .rating > span:last-child {
+  color: #0000ff;
+}
+
+
+/* --------------------                          FORMS                    --------------------------------- */
+/* --------------------                          FORMS                    --------------------------------- */
+/* --------------------                          FORMS                   --------------------------------- */
+/* --------------------                          FORMS                    --------------------------------- */
+/* --------------------                          FORMS                    --------------------------------- */
+/* --------------------                          FORMS                    --------------------------------- */
+/* --------------------                          FORMS                    --------------------------------- */
+/* --------------------                          FORMS                    --------------------------------- */
+/* --------------------                          FORMS                   --------------------------------- */
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  padding: 2rem;
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: 0.5rem;
+  list-style-type: none;
+}
+.form-container li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+input {
+  padding: 1rem;
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: 0.5rem;
+}
+
+/* --------------------                          PRODUCTS                    --------------------------------- */
+/* --------------------                          PRODUCTS                    --------------------------------- */
+/* --------------------                          PRODUCTS                   --------------------------------- */
+/* --------------------                          PRODUCTS                    --------------------------------- */
+/* --------------------                          PRODUCTS                    --------------------------------- */
+/* --------------------                          PRODUCTS                    --------------------------------- */
+/* --------------------                          PRODUCTS                    --------------------------------- */
+/* --------------------                          PRODUCTS                    --------------------------------- */
+/* --------------------                          PRODUCTS                    --------------------------------- */
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content-margined {
+  margin: 1rem;
+}
+
+.table {
+  width: 100%;
+}
+th {
+  text-align: left;
+}
+tbody > tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+/* --------------------                          CHECKOUT                    --------------------------------- */
+/* --------------------                          CHECKOUT                    --------------------------------- */
+/* --------------------                          CHECKOUT                   --------------------------------- */
+/* --------------------                          CHECKOUT                    --------------------------------- */
+/* --------------------                          CHECKOUT                    --------------------------------- */
+/* --------------------                          CHECKOUT                    --------------------------------- */
+/* --------------------                          CHECKOUT                    --------------------------------- */
+/* --------------------                          CHECKOUT                    --------------------------------- */
+/* --------------------                          CHECKOUT                    --------------------------------- */
+
+.checkout-steps {
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+  margin: 1rem auto;
+}
+.checkout-steps > div {
+  border-top: 0.3rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1 1;
+  padding-top: 1rem;
+}
+.checkout-steps > div.active {
+  border-top: 0.3rem #f08000 solid;
+  color: #f08000;
+}
+
+/* --------------------                          PLACE-ORDER                    --------------------------------- */
+/* --------------------                          PLACE-ORDER                    --------------------------------- */
+/* --------------------                          PLACE-ORDER                   --------------------------------- */
+/* --------------------                          PLACE-ORDER                    --------------------------------- */
+/* --------------------                          PLACE-ORDER                    --------------------------------- */
+/* --------------------                          PLACE-ORDER                    --------------------------------- */
+/* --------------------                          PLACE-ORDER                    --------------------------------- */
+/* --------------------                          PLACE-ORDER                    --------------------------------- */
+/* --------------------                          PLACE-ORDER                   --------------------------------- */
+
+.placeorder {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.placeorder-info {
+  flex: 3 1 60rem;
+}
+.placeorder-action {
+  flex: 1 1 20rem;
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: 0.5rem;
+  background-color: #fcfcfc;
+  padding: 1rem;
+}
+.placeorder-info > div {
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: 0.5rem;
+  background-color: #fcfcfc;
+  padding: 1rem;
+  margin: 1rem;
+}
+.placeorder-info > div:first-child {
+  margin-top: 0;
+}
+.placeorder-action > ul {
+  padding: 0;
+  list-style-type: none;
+}
+.placeorder-action > ul > li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.placeorder-action > ul > li:last-child {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #c04000;
+}
+.placeorder-actions-payment > div {
+  width: 100%;
+}
+
+/* --------------------                          Profile                    --------------------------------- */
+/* --------------------                          Profile                    --------------------------------- */
+/* --------------------                          Profile                   --------------------------------- */
+/* --------------------                          Profile                    --------------------------------- */
+/* --------------------                          Profile                    --------------------------------- */
+/* --------------------                          Profile                    --------------------------------- */
+/* --------------------                          Profile                    --------------------------------- */
+/* --------------------                          Profile                    --------------------------------- */
+/* --------------------                          Profile                    --------------------------------- */
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-info {
+  flex: 1 1 30rem;
+}
+.profile-orders {
+  flex: 3 1 60rem;
+}
+
+/* --------------------                          ADMIN                    --------------------------------- */
+/* --------------------                          ADMIN                    --------------------------------- */
+/* --------------------                          ADMIN                   --------------------------------- */
+/* --------------------                          ADMIN                    --------------------------------- */
+/* --------------------                          ADMIN                    --------------------------------- */
+/* --------------------                          ADMIN                    --------------------------------- */
+/* --------------------                          ADMIN                    --------------------------------- */
+/* --------------------                          ADMIN                    --------------------------------- */
+/* --------------------                          ADMIN                    --------------------------------- */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  right: 0;
+  padding: 1rem;
+  list-style-type: none;
+  z-index: 1;
+  background-color: #203040;
+  margin: 0;
+  margin-top: 0.4rem;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* --------------------                          Filter                    --------------------------------- */
+/* --------------------                          Filter                    --------------------------------- */
+/* --------------------                          Filter                   --------------------------------- */
+/* --------------------                          Filter                    --------------------------------- */
+/* --------------------                          Filter                    --------------------------------- */
+/* --------------------                          Filter                    --------------------------------- */
+/* --------------------                          Filter                    --------------------------------- */
+/* --------------------                          Filter                    --------------------------------- */
+/* --------------------                          Filter                    --------------------------------- */
+
+.filter {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem auto;
+  max-width: 45rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter input,
+.filter button,
+.filter select {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #c0c0c0 solid;
+  font-size: 1.6rem;
+}
+.categories {
+  padding: 0;
+  list-style-type: none;
+}
+.categories a {
+  display: flex;
+  padding: 1rem;
+}
+
+.categories a:hover {
+  background-color: #c0c0c0;
 }

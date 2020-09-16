@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom'
-import "./product.css"
 import { useDispatch, useSelector } from 'react-redux';
 import { detailsProduct } from '../actions/productActions';
 
