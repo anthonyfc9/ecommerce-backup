@@ -39,13 +39,16 @@ const handleAddToCart =()=>{
                     <h4>{product.name}</h4>
                 </li>
                 <li>
+                    <h4>{product.brand}</h4>
+                </li>
+                <li>
                     {product.rating} stars
                 </li>
                 <li>
                     <b>$ {product.price}</b>
                 </li>
                 <li>
-                   Description: {product.desc}
+                   Description: {product.description}
                 </li>
             </ul>
         </div>
