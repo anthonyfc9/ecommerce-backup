@@ -1,4 +1,4 @@
-#eccomerce website
+# eccomerce website
 
 this is a web store with payment using paypal, if you want to use this repo make sure to change config.js to add your own mongodb link. then make sure to create a .env file with this inside of it and edit the config.js in the backend folder
 
@@ -7,7 +7,7 @@ this is a web store with payment using paypal, if you want to use this repo make
 MONGODB_URL=mongodb://localhost/yourmongodbName
 JWT_SECRET = somethingSecret
 ```
-#superuser
+# superuser
 
 change super user under backend/routes/userRoutes
 
