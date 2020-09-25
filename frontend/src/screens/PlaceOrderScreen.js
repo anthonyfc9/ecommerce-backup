@@ -17,8 +17,11 @@ function PlaceOrderScreen(props) {
   }
   const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
   const shippingPrice = itemsPrice > 100 ? 0 : 10;
-  const taxPrice = 0.15 * itemsPrice;
-  const totalPrice = itemsPrice + shippingPrice + taxPrice;
+  const taxPrice = 0.15 * itemsPrice.toFixed();
+  const totalPrice = (itemsPrice + shippingPrice + taxPrice).toFixed(2);
+
+
+  console.log(totalPrice)
 
   const dispatch = useDispatch();
 
@@ -36,9 +39,9 @@ function PlaceOrderScreen(props) {
 
   }, [success]);
 
-  const checkoutHandler = () => {
-    props.history.push("/signin?redirect=shipping");
-  }
+  // const checkoutHandler = () => {
+  //   props.history.push("/signin?redirect=shipping");
+  // }
 
   return <div>
     <CheckoutSteps step1 step2 step3 step4 ></CheckoutSteps>

@@ -22,7 +22,7 @@ useEffect(()=>{
             <li key={product._id}>
             <div className="product">
             <Link to={'/product/' + product._id}>
-            <img className='productImage'src={product.image} alt="luffy"/>
+            <img className='productImage'src={product.image} alt={product.name}/>
                </Link>
                 <div className="productName">
                 <Link to={'/product/' + product._id}>
@@ -30,7 +30,7 @@ useEffect(()=>{
                </Link>
                 </div>
                 <div className="product-brand">{product.brand}</div>
-                <div className="productPrice">{product.price}</div>
+                <div className="productPrice">${product.price}</div>
                 <div className="productRating">{product.rating} stars </div>
             </div>
         </li>
